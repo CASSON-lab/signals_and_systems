@@ -1,0 +1,85 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="835449419" file="L:\Dropbox (The University of Manchester)\work\teaching\2016-2017\signals_and_systems\my_lectures\lecture16_17-laplace_transforms\matlab_app\University of Manchester Electrical and Electronic Engineeri.prj" location="L:\Dropbox (The University of Manchester)\work\teaching\2016-2017\signals_and_systems\my_lectures\lecture16_17-laplace_transforms\matlab_app" name="University of Manchester Electrical and Electronic Engineeri" target="target.mlapps" target-name="Package App">
+    <param.appname>University of Manchester Electrical and Electronic Engineeri</param.appname>
+    <param.authnamewatermark>Alex Casson</param.authnamewatermark>
+    <param.email>alex.casson@manchester.ac.uk</param.email>
+    <param.company>University of Manchester</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>GUI to show impulse responses due to different pole locations in the Laplace domain</param.summary>
+    <param.description>Move the poles locations to see how these affect the system impulse response. Displays:
+ - The location of the poles in the s domain. (Plotting Re(s) as an x coordinate and Im(s) as a y coordinate). 
+ - The transfer function this corresponds to in the Laplace domain, H(s). For simplicity this assumes no zeros are presenet.
+ - The inverse Laplace transform of H(s). That is, h(t) the impulse response. 
+ - A plot of the impulse response h(t). 
+Use this GUI to see how he imaginary part of the poles gives the oscillation frequency. The real part of the poles gives the amount of damping present. When the real part is &gt;= 0 the system becomes unstable.</param.description>
+    <param.screenshot>${PROJECT_ROOT}\scrennshot.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Control System Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>3</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.0</item>
+      <item>10.0</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>L:\Dropbox (The University of Manchester)\work\teaching\2016-2017\signals_and_systems\my_lectures\lecture16_17-laplace_transforms\matlab_app</param.output>
+    <param.guid>f557fa34-2b6d-4152-8388-e9b961a7fffc</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\laplace_poles.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\laplace_poles.fig</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="L:\Dropbox (The University of Manchester)\work\teaching\2016-2017\signals_and_systems\my_lectures\lecture16_17-laplace_transforms" name="matlab_app" optional="false">L:\Dropbox (The University of Manchester)\work\teaching\2016-2017\signals_and_systems\my_lectures\lecture16_17-laplace_transforms\matlab_app</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
